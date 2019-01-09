@@ -1,7 +1,3 @@
-# js-assignment
-JS Assignment on ECMA 6
-
-## Output `src/output.md`
 Copying [my dry run from slack](https://teamclairvoyant.slack.com/archives/GE2FJ7ZH6/p1543547156000300), which was thought there, initial thinking was it will produce below output:
 ```javascript
 response: { name: "Clairvoyant", location: "Pune", id: "1" }
@@ -22,26 +18,4 @@ outerYield: {"value":{},"done":false}
 response: { name: "Clairvoyant", location: "Pune", id: "1" }
 response : ["clairvoyantUser1", "clairvoyantUser2", "clairvoyantUser3", "clairvoyantUser4", "clairvoyantUser5" ]
 final user list: {value: ["clairvoyantUser1", "clairvoyantUser2", "clairvoyantUser3", "clairvoyantUser4", "clairvoyantUser5" ], done:true}
-```
-## Custom `forEach`
-
-FileName: `src/my-for-each.js`
-Calling callback using `while` loop
-```javascript
-let k = 0;
-while (k < len) {
-    let kValue;
-    if (k in O) {
-        kValue = O[k];
-        callback.call(T, kValue, k, O);
-    }
-    k++;
-}
-```
-Added one more alternative way of calling callback function using `for`
-```javascript
-for(i = 0; i<len; i++) {
-    const keyValue = O[i];
-    callback.call(T, keyValue, i, O);
-}
 ```
