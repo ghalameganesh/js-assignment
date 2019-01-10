@@ -1,5 +1,6 @@
 import TestMyForEach from "./my-for-each";
 import PromiseDemo from "./controllers/promise";
+import CallbackDemo from "./controllers/callback";
 console.log('********************');
 const test = new TestMyForEach();
 document.write(`<br><b>Input Array for Tesing myForeach [10, 20, 30]</b>`);
@@ -12,12 +13,10 @@ test.testChangingArrElementValueBeforeIterating();
 
 
 /** Third Assigment */
-// let auth = new AuthService();
-// auth.get('login').then(response => {    
-//     console.log( response.data );
-// }).catch(error => {
-//   console.log(error)
-// });
+// User Promises
+let promiseObj = new PromiseDemo();
+promiseObj.execute();
 
-let obj = new PromiseDemo();
-obj.execute();
+// Using callback
+let callbackObj = new CallbackDemo();
+callbackObj.execute();
