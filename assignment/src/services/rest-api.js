@@ -10,9 +10,4 @@ class RestService {
     }
 }
 
-let rest = new RestService();
-rest.get('login').then(response => {    
-    console.log( response.data );
-}).catch(error => {
-  console.log(error)
-});
+export default RestService;
