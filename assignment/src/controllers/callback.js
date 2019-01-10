@@ -1,9 +1,6 @@
 import AuthService from "../services/auth";
 import OrganizationService from "../services/orgnization";
 import UserService from "../services/user";
-import {
-    rejects
-} from "assert";
 let authService = new AuthService();
 let orgService = new OrganizationService();
 let userService = new UserService();

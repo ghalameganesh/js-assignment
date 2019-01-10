@@ -1,6 +1,7 @@
 import TestMyForEach from "./my-for-each";
 import PromiseDemo from "./controllers/promise";
 import CallbackDemo from "./controllers/callback";
+import AsyncAwaitDemo from "./controllers/async";
 console.log('********************');
 const test = new TestMyForEach();
 document.write(`<br><b>Input Array for Tesing myForeach [10, 20, 30]</b>`);
@@ -20,3 +21,7 @@ promiseObj.execute();
 // Using callback
 let callbackObj = new CallbackDemo();
 callbackObj.execute();
+
+// Using AsyncAwait
+let asyncAwaitObj = new AsyncAwaitDemo();
+asyncAwaitObj.execute();
