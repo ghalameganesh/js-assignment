@@ -1,3 +1,2 @@
-export class User {
-    l
+export class User  {
 }
