@@ -7,21 +7,22 @@ module.exports = {
         filename: 'main.js'
     },
     module: {
-        rules: [
-            {
-              test: /\.(js)$/,
-              exclude: /(node_modules)/,
-              use: {
+        rules: [{
+            test: /\.(js)$/,
+            exclude: /(node_modules)/,
+            use: {
                 loader: 'babel-loader',
                 options: {
-                  presets: ['@babel/preset-env']
+                    presets: ['@babel/preset-env'],
+                    "plugins": [
+                        ["@babel/transform-runtime"]
+                    ]
                 }
-              }
             }
-          ]
+        }]
     },
     plugins: [
-      new HtmlWebPackPlugin({
+        new HtmlWebPackPlugin({
             template: "./src/index.html",
             filename: "./index.html"
         })
