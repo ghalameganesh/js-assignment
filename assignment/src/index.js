@@ -15,12 +15,12 @@ test.testChangingArrElementValueBeforeIterating();
 
 /** Third Assigment */
 // User Promises
-let promiseObj = new PromiseDemo();
-promiseObj.execute();
+// let promiseObj = new PromiseDemo();
+// promiseObj.execute();
 
 // Using callback
-let callbackObj = new CallbackDemo();
-callbackObj.execute();
+// let callbackObj = new CallbackDemo();
+// callbackObj.execute();
 
 // Using AsyncAwait
 let asyncAwaitObj = new AsyncAwaitDemo();
